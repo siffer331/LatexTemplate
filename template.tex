@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[danish,english]{babel}
+\usepackage{amsmath, amsfonts, amsthm, amssymb,stmaryrd,tikz,pgfplots,graphicx,biblatex}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+
+\newcommand{\inv}{^{-1}}
+\newcommand{\imp}{\Rightarrow}
+\newcommand{\biimp}{\Leftrightarrow}
+\newcommand{\vimp}{\Downarrow}
+\newcommand{\limm}[2]{\lim_{#1 \rightarrow #2}}
+\newcommand{\modstrid}{\lightning}
+
+\newcommand{\vecdd}[2]{\begin{pmatrix}#1 \\
+	#2\end{pmatrix}}
+	
+\newcommand{\vecddd}[3]{\begin{pmatrix}#1 \\
+	#2\\
+	#3 \end{pmatrix}}
+\newtheorem{opg}{Opgave}
+\newtheorem{lemma}{Lemma}
+\newtheorem{korolar}{Korolar}
+\newtheorem{setn}{Sætning}
+\newtheorem{definition}{Definition}
+\newtheorem{bemærkning}{Bemærkning}
+
+\renewcommand*{\proofname}{Bevis}
+
+\newcommand{\complexAxis}[1]{
+	\draw [->] (-#1-1,0) -- (#1+1,0);
+	\draw [->] (0,-#1-1) -- (0,#1+1);
+	\foreach \n in {-#1,...,-1,1,2,...,#1}{
+		\draw (\n,-3pt) -- (\n,3pt)   node [above] {$\n$};
+		\draw (-3pt,\n) -- (3pt,\n)   node [right] {$\n i$};
+	}
+}
+
+
+\pgfplotsset{compat=1.18} %Fixer warning
+
+\title{HVAD HEDDER DOCUMENTET?}
+\author{HVEM SKREV?}
+
+\begin{document}
+
+	\maketitle
+	\newpage
+	
+
+\end{document}
